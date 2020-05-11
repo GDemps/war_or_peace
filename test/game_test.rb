@@ -19,6 +19,7 @@ def test_it_exists_with_attributes
   binding.pry
   assert_instance_of Game, game1
   assert_equal 0, game1.count
+  assert_equal card1, game1.first_player.deck.cards
 end
 
 end

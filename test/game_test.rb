@@ -18,6 +18,7 @@ def test_it_exists_with_attributes
   require "pry"
   binding.pry
   assert_instance_of Game, game1
+  assert_equal 0, game1.count
 end
 
 end
